@@ -26,6 +26,7 @@ export class MessageFormComponent implements OnInit {
 
     this.dialogFlowService.getResponse(this.message.content).subscribe(res => {
       console.log(res);
+      console.log(res.result.fulfillment.speech);
       // if (res.result.fulfillment.messages[0].type == 'simple_response'){
       this.messages.push(
         new Message(res.result.fulfillment.speech, 'assets/images/bot.png', res.timestamp)
