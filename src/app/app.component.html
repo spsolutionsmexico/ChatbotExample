@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="header">
+        <h3>DEMO CHATBOT SP</h3>
+        <img width="300px" src="../assets/images/bot.png" alt="Juanito">
+    </div>
+</div>
+<!--
+<div class="chat-icon" onclick="openchat()">
+    <img width="75px" src="../assets/images/chat.png" alt="Chat">
+</div>
+-->
+<div class="chatform">
+    <message-list [messages]="messages"></message-list>
+    <message-form [message]="message" [messages]="messages"></message-form>
+</div>
