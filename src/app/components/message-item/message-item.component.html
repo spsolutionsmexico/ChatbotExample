@@ -2,10 +2,11 @@
     <img [src]="message.avatar" class="avatar" />
     <div class="message">
         {{message.content}}
+        <video width="400" controls autoplay>
+            <source src="{{message.content}}" type="video/mp4">
+          </video>
     </div>
-    <video width="400" controls autoplay>
-        <source src="{{message.content}}" type="video/mp4">
-      </video>
+
     <div class="timeform">
         <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="timestamp">a las {{message.timestamp | date : 'dd/MM/yyyy, h:mm a' }}</span>
     </div>
