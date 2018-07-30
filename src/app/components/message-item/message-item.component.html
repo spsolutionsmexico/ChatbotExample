@@ -2,10 +2,8 @@
     <img [src]="message.avatar" class="avatar" />
     <div class="message">
         {{message.content}}
-        <iframe src="{{message.content}}"></iframe>
-        <video width="400" controls>
-            <source src="{{message.content}}" type="video/mp4">
-          </video>
+
+        <iframe id="ytplayer" type="text/html" width="720" height="405" src="{{message.content}}" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="timeform">
         <i class="fa fa-clock-o" aria-hidden="true"></i> <span class="timestamp">a las {{message.timestamp | date : 'dd/MM/yyyy, h:mm a' }}</span>
