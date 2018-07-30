@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 
 var distDir = __dirname + "/dist/";
-app.use(express.static(distDir));
+app.use(express.static(distDir + "index.html"));
 
 
 // Initialize the app.
