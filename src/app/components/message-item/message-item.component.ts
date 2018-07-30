@@ -10,7 +10,7 @@ export class MessageItemComponent implements OnInit {
 
   @Input('message')
   private message: Message;
-
+  
   constructor() { }
 
   ngOnInit() {
